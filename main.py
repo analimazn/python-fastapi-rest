@@ -5,8 +5,8 @@ from src.controllers.home import home_controller
 
 app = FastAPI()
 
+app.add_api_route('/healthcheck', healthcheck_controller())
+
 @app.get('/')
-home_controller()
-
-app.add_api_route("/healthcheck", healthcheck_controller())
-
+def route_home():
+  return home_controller()

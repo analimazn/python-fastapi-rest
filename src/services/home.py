@@ -1,2 +1,2 @@
 def home_service():
-  return { 'body': 'Hello World' }
+  return {"message": "Hello World"}
