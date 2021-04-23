@@ -49,7 +49,7 @@ Para inicializar a aplicação através do [Docker](https://docs.docker.com/) ut
 Caso o container não inicialize, utilize o comando demonstrado a seguir na raiz do diretório:
 
 ```sh
-  sudo docker-compose exec app
+  sudo docker-compose up -d
 ```
 
 ## Testes
@@ -66,7 +66,7 @@ Para inicializar os testes localmente utilize o comando demonstrado a seguir na 
 Para inicializar os testes através do [Docker](https://docs.docker.com/) utilize o comando demonstrado a seguir na raiz do diretório:
 
 ```sh
-  docker-compose exec app pytest src/tests/test.py
+  sudo docker-compose exec app pytest src/tests/test.py
 ```
 
 ## Estrutura do projeto
